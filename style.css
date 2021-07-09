@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    color: black;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 200px) 20px;
+}
+.content {
+    border: 1px solid gray;
+}
+#content1 {
+    background-color: #ddd;
+}
+.image1,.image2 {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+}
