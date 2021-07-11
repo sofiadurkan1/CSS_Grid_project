@@ -60,6 +60,10 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 200px) 20px;
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-rows: 100px 200px 100px; */
+
+    grid-gap: 20px;
   }
   
   #content1 {
@@ -244,10 +248,10 @@
     grid-row-end: 6;
   }
   .button{
-    background-color: #18b8e9; 
+    background-color: #dae4e7; 
     border: none;
-    color: white;
-    padding: 1px 32px;
+    color:white;
+    padding: 10px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -255,8 +259,14 @@
     margin: 10px 5px;
     transition-duration: 0.4s;
     cursor: pointer;
+    
   }
-  .button1{
+
+  .button:hover {
+    background-color: #1eb4eb;
+    color: white;
+  }
+  /* .button1{
     background-color: white; 
     color: black; 
     border: 2px solid #4CAF50;
@@ -284,9 +294,35 @@
     .button3:hover {
       background-color: #f44336;
       color: white;
-    }
+    } */
     #content20{
-      /* justify-self: center; */
-      place-self: center stretch;
+      justify-self: end;
+      place-self: end;
+      grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+   
+    }
+
+    #content21{
+    justify-self: end;
+      place-self: end;
+      grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    }
+
+    #content22{
+        justify-self: end;
+        place-self: end;
+        grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 5;
+      grid-row-end: 6;
+
     }
     
