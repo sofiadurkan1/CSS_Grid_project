@@ -6,6 +6,53 @@ body {
     background-color: white;
     color: black;
 }
+p{
+    font-size: 2rem;
+    font-style:italic;
+    font-family: 'Franklin Gothic Medium';
+}
+form.place {
+    width: 100%;
+    position: relative;
+    display: flex;
+
+}
+
+form.place input[type=text]{
+  
+  width: 70%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding:5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF
+
+}
+form.place button {
+    
+
+    width: 40px;
+    height: 30px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+   
+  }
+  select{
+      font-size:1rem;
+      padding: 2px 5px;
+      padding: 5px;
+      margin-top: 10px;
+      display:flex;
+      width:88%
+  }
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -43,7 +90,13 @@ body {
     grid-row-start: 1;
     grid-row-end: 3;
 }
+#content5{
+    grid-column-start:5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 3;
 
+}
 #content6{
     grid-column-start:2;
     grid-column-end:4;
@@ -83,7 +136,7 @@ body {
 
 }
 
-#content14{
+#content11{
     grid-column-start:6;
     grid-column-end:8;
     grid-row-start: 6;
